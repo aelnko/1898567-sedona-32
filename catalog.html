@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -140,15 +140,26 @@
     <section class="hotels">
       <ul class="hotels-list">
         <li class="hotels-item">
-          <h1 class="hotel-name">Amara Resort & Spa</h1>
           <img src="img/hotel-1.jpg" alt="Фотография гостиницы" width="180" height="120">
-          <p class="hotel-type">Гостиница От 4000 ₽</p>
-          <a href="#" class="button-link">
-            <button type="button" class="button">Подробнее</button>
-          </a>
-          <button type="button" class="favourite-button">В избранное</button>
-          <p>
-            <span class="rating"> Рейтинг: 8,5 </span>
+          <div class="hotels-item-info">
+            <h2 class="hotel-name">Amara Resort & Spa</h2>
+            <div class="hotels-item-info-column">
+              <span class="hotel-type">Гостиница</span>
+              <a href="#" class="button button-link">
+                Подробнее
+              </a>
+            </div>
+            <div class="hotels-item-info-column">
+              <span class="hotel-cost">От 4000 ₽</span>
+              <button type="button" class="button favourite-button">В избранное</button>
+            </div>
+          </div>
+          <div class="rating">
+            <div class="rating-stars">
+              <span class="visually-hidden">4 звезды</span>
+            </div>
+            <span class="rating-score"> Рейтинг: 8,5 </span>
+          </div>
           </p>
         </li>
         <li class="hotels-item">
