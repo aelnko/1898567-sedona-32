@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/ptsans-400.woff2) format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/ptsans-700.woff2) format("woff2");
+    font-display: swap;
+}
+:root {
+    --bodyBackgroundColor: #FFF;
+    --coolLight: #83B3D3;
+  }
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color:var(--bodyBackgroundColor);
+    font-size: 18px;
+    line-height: 21px;
+}
+.navigation {
+    font-size:20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+.intro-heading {
+    background-image: url(img/index-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200 485;
+}
+.intro-heading-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+.intro-heading-text {
+    font-size: 22px;
+}
+.reasons-title,.subreasons-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+.reasons-number {
+    font-size: 18px;
+}
+.reasons-description,.subreasons-description {
+    font-size: 18px;
+}
+.reasons-item-inner {
+    background-image: url(img/background-1.png);
+    color: white;
+}
+.reasons-item-third-fifth {
+    background-image: url(img/background-2.png);
+}
+.reasons-item-fourth {
+    background-image: url(img/light20background.png);
+}
+.subreasons-item-first-third {
+    background-image:url(img/light12background.png);
+}
+.hotel-seach {
+    background-color: white;
+}
+.hotel-search-question {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.hotel-search-suggestions {
+    font-size: 22px;
+}
+.mailing {
+    background-image: url(img/mailing.jpg);
+    background-repeat: no-repeat;
+    color: white;
+}
+.mailing-title {
+    text-transform:uppercase;
+    font-size:30px;
+    font-weight:700;
+}
+.mailing-description {
+    font-size:22px;
+}
+.filters {
+    background-image: url(../img/bg_catalog_1.jpg);
+    background-repeat: no-repeat;
+    background-color:var(--coolLight);
+}
+.filters-header-title {
+    font-size:60px;
+    color: white;
+    font-weight:700;
+}
+ul .visually-hidden, .breadcrumbs-item {
+    color: white;
+    font-size: 16px;
+}
+.search-fieldset {
+    color:white;
+}
+.search-fieldset-title, .housing-type, .cost {
+    font-size: 20px;
+    font-weight: 700;
+}
+.search-fieldset label {
+    font-size: 18px;
+}
+.footer-contacts-phone {
+    font-size:40px;
+}
+a:visited,a:link,a:active{
+    color:black;
+    text-decoration: none;
+}
