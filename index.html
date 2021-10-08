@@ -30,28 +30,28 @@
       <img src="img/sedona.svg" alt="Логотип Седоны" class="sedona-logo" width="138" height="70.05">
       <ul class="navigation-user">
         <li class="navigation-user-item">
-          <button class="search-button" type="button">
+          <button class="button search-button" type="button">
             <span class="visually-hidden">
               Поиск
             </span>
             </a>
         </li>
         <li class="navigation-user-item">
-          <button class="favourites-button" type="button">
+          <button class="button favourites-button" type="button">
             <span class="visually-hidden">
               Избранное
             </span>
           </button>
         </li>
         <li class="navigation-user-item">
-          <button class="button" type="button">
+          <button class="button button-wish" type="button">
             Хочу сюда!
           </button>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-page">
+  <main class="main-container main-page">
     <section class="intro-heading">
       <div class="intro-heading-img-wrap">
         <img src="img/welcome.svg" class="intro-heading-img-logo" alt="Добро пожаловать в Седону" width="458"
@@ -79,32 +79,38 @@
             <p class="reasons-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
+            <img src="img/photo-1.jpg" class="reasons-img" alt="Фотография главной улицы" width="800" height="384">
           </div>
-          <img src="img/photo-1.jpg" class="reasons-img" alt="Фотография из Седоны" width="800" height="384">
           <ul class="subreasons-list">
-            <li class="subreasons-item-first-third">
-              <h3 class="subreasons-title">
-                Жильё
-              </h3>
-              <p class="subreasons-description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
-              </p>
+            <li class="subreasons-item">
+              <div class="subreasons-item-first-third">
+                <h3 class="subreasons-title">
+                  Жильё
+                </h3>
+                <p class="subreasons-description">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </div>
             </li>
             <li class="subreasons-item">
-              <h3 class="subreasons-title">
-                Еда
-              </h3>
-              <p class="subreasons-description">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-              </p>
+              <div class="subreasons-item">
+                <h3 class="subreasons-title">
+                  Еда
+                </h3>
+                <p class="subreasons-description">
+                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                </p>
+              </div>
             </li>
-            <li class="subreasons-item-first-third">
-              <h3 class="subreasons-title">
-                Сувениры
-              </h3>
-              <p class="subreasons-description">
-                Не только китайского, но и настоящего местного производства!
-              </p>
+            <li class="subreasons-item">
+              <div class="subreasons-item-first-third">
+                <h3 class="subreasons-title">
+                  Сувениры
+                </h3>
+                <p class="subreasons-description">
+                  Не только китайского, но и настоящего местного производства!
+                </p>
+              </div>
             </li>
           </ul>
         </li>
@@ -119,8 +125,8 @@
             <p class="reasons-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
+            <img src="img/photo-2.jpg" class="reasons-img" alt="Мост дьявола" width="800" height="384">
           </div>
-          <img src="img/photo-2.jpg" class="reasons-img" alt="Мост дьявола" width="800" height="384">
         </li>
         <li class="reasons-item">
           <div class="reasons-item-third-fifth">
@@ -170,7 +176,7 @@
       <p class="hotel-search-suggestions">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <button class="search-button" type="button">
+      <button class="button search-button" type="button">
         Поиск гостиницы в Седоне
       </button>
     </section>
@@ -182,8 +188,8 @@
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="text" name="email" placeholder="Ваш e-mail">
-        <button class="mailing-button" type="submit">
+        <input type="text" name="email" placeholder="Ваш e-mail" class="email">
+        <button class="button mailing-button" type="submit">
           Подписаться
         </button>
       </form>
@@ -218,7 +224,7 @@
         +7 (812) 812-12-12
       </a>
       <a class="html-academy-link" href="https://htmlacademy.ru/">
-        <img src="img/html-academy.svg" alt="Логотип HTML Academy" class="html-academy-logo">
+        <img src="img/html-academy.svg" alt="Логотип HTML Academy" class="html-academy-logo" width="115" height="34">
       </a>
     </section>
   </footer>
