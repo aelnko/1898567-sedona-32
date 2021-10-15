@@ -226,6 +226,18 @@ ul,ol {
     line-height: auto;
     font-weight: 700;
 }
+.search-fieldsets {
+    display:flex;
+}
+.infrastructure-field {
+    width:170px;
+}
+.housing-type-field {
+    width:170px;
+}
+.breadcrumbs {
+    display:flex;
+}
 .breadcrumbs-item .visually-hidden {
     color: var(--white);
     font-size:16px;
