@@ -44,6 +44,12 @@ body {
     font-weight: 400;
     line-height: 26px;
 }
+.page-footer {
+    margin-top:auto;
+}
+.main-container {
+    flex-grow:1;
+}
 .navigation {
     font-size: 20;
     font-weight: 700;
@@ -52,7 +58,13 @@ body {
     margin: 0 auto;
 }
 .navigation-list {
-    max-width:309px;
+    margin:0;
+    padding:0;
+    width:350px;
+}
+.navigation-user {
+    max-width:350px;
+    margin-left:auto;
 }
 a {
     text-decoration:none;
@@ -85,7 +97,6 @@ ul,ol {
 }
 .navigation-list {
     text-align: center;
-    max-width: 350px;
 }
 .intro-heading {
     background-image: url(../img/index-background.jpg);
