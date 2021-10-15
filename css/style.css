@@ -119,6 +119,7 @@ ul,ol {
 }
 .reasons-item-pictures {
     display:flex;
+    margin:0;
 }
 .reasons-item-inner {
     background-color: var(--coolDark);
@@ -133,11 +134,16 @@ ul,ol {
     flex-wrap:wrap;
     text-align:center;
 }
+.reasons-item-third-fifth,.reasons-item-fourth {
+    width:400px;
+    height:384px;
+}
 .reasons-title {
     font-size:24px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 28px;
+    margin:0;
 }
 .reasons-number {
     font-size:18px;
@@ -168,6 +174,7 @@ ul,ol {
     line-height:28px;
     font-weight:700;
     text-transform:uppercase;
+    margin:0;
 }
 .subreasons-description {
     font-size: 18px;
