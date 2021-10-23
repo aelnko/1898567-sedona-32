@@ -136,9 +136,8 @@ ul,ol {
 .intro-heading-text {
     font-size:22px;
 }
-.reasons-item-pictures {
-    display:flex;
-    margin:0;
+.reasons-picture {
+    grid-column:span 2;
 }
 .reasons-item-inner {
     background-color: var(--coolDark);
@@ -146,12 +145,17 @@ ul,ol {
     width:400px;
     height:384px;
 }
+.reasons-item {
+    margin:0;
+    padding:0;
+}
 .reasons-list {
     margin:0;
     padding:0;
-    display:flex;
-    flex-wrap:wrap;
     text-align:center;
+    display:grid;
+    grid-template-columns:400px 400px 400px;
+    gap:0px;
 }
 .reasons-item-third-fifth,.reasons-item-fourth {
     width:400px;
