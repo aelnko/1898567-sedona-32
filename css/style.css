@@ -13,7 +13,6 @@
     font-display: swap;
 }
 :root {
-    --bodyBackgroundColor: #FFF;
     --coolLight: #83B3D3;
     --black: #000000;
     --dark: #333333;
@@ -31,48 +30,66 @@
     --warning: #FD922E;
     --success: #7DB550;
   }
-html {
-    height: 100%;    
-}
 body {
     margin:0;
-    background-color: var(--bodyBackgroundColor);
-    display:flex;
-    flex-direction: column;
-    min-height: 100%;
+    background-color: var(--gray);
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     line-height: 26px;
 }
-.main-container {
-    flex-grow:1;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-.page-container {
+.container {
+    display:grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100vh;
     width:1200px;
     margin:0 auto;
+    background-color: var(--white);
 }
 .navigation {
-    font-size: 20;
+    font-size: 20px;
     font-weight: 700;
     display: flex;
-    width: 1057px;
-    margin: 0 auto;
 }
 .navigation-list {
+    display:flex;
     margin:0;
     padding:0;
     width:350px;
+    flex-wrap:wrap;
+    margin:0 auto;
 }
 .navigation-user {
-    max-width:350px;
-    margin-left:auto;
+    width:350px;
+    margin:0 auto;
 }
+.navigation-link {
+    padding:20px 15px;
+    display:block;
+}
+.navigation-list .navigation-user-item {
+    min-width:18px;
+    min-height:18px;
+    padding:0 15px;
+}
+
 a {
     text-decoration:none;
     color: black
 }
 ul,ol {
     list-style-type: none;
+    padding:0;
+    margin:0;
 }
 .button {
     font-family: "PT Sans", sans-serif;
@@ -103,6 +120,8 @@ ul,ol {
     background-image: url(../img/index-background.jpg);
     background-repeat: no-repeat;
     background-size: 1200 485;
+    padding-top:51px;
+    padding-bottom:83px;
 }
 .intro-heading-img-logo {
     display:block;
@@ -201,6 +220,10 @@ ul,ol {
     background-image: url(../img/mailing.jpg);
     background-repeat: no-repeat;
     color: white;
+    padding-bottom:94px;
+}
+.mailing-catalog {
+    padding-bottom:94px;
 }
 .mailing-title {
     font-size: 30px;
@@ -285,10 +308,8 @@ ul,ol {
 .number-products {
     font-family: "PT Sans", sans-serif;
 }
-footer {
+.page-footer {
     display:flex;
-    width:1056px;
-    margin:0 auto;
 }
 .social-contacts {
     width:130px;
@@ -299,10 +320,6 @@ footer {
 }
 .html-academy-contacts {
     width:120px;
-}
-.footer-container {
-    width:1200px;
-    margin:0 auto;
 }
 .footer-contacts-phone {
     font-size:40px;
