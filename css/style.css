@@ -32,6 +32,7 @@
   }
 body {
     margin:0;
+    padding:0;
     background-color: var(--gray);
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -81,7 +82,10 @@ body {
     min-height:18px;
     padding:0 15px;
 }
-
+p,div,h,h1,h2 {
+    padding:0;
+    margin:0;
+}
 a {
     text-decoration:none;
     color: black
@@ -298,21 +302,6 @@ ul,ol {
     padding-top:55px;
     padding-right:601px;
 }
-.infrastructure-field, .housing-type-field, .cost-field {
-    padding:0;
-    margin:0;
-}
-.search-fieldsets {
-    display:flex;
-    padding:0;
-}
-.infrastructure-field {
-    width:170px;
-    margin-left:71px;
-}
-.housing-type-field {
-    width:170px;
-}
 .breadcrumbs {
     display:flex;
     margin:0;
@@ -330,31 +319,65 @@ ul,ol {
     font-size:16px;
     line-height:auto;   
 }
-fieldset {
-}
-.search-fieldsets {
-    padding-bottom:40px;
+.filters-block {
+    display:flex;
     padding-top:45px;
+    padding-bottom:32px;
 }
-.search-fieldset-title {
+.infrastructure-block, .housing-type-block, .cost-block, .seaech-actions {
+    display:flex;
+    flex-direction:column;
+}
+.infrastructure-title, .housing-type-title, .cost-title {
     font-size:20px;
     font-weight:700;
-    line-height:auto;
 }
-.infrastructure,.housing-type {
+.infrastructure-block {
+    padding-left:71px;
+}
+.housing-type-block {
+    padding-left:67px;
+}
+.cost-block {
+    padding-left:167px;
+}
+.search-actions {
+    padding-left:81px;
+    padding-top:131px;
+}
+label {
     font-size:18px;
-    line-height:auto;
+}
+.swimmingpool, .hotel {
+    margin-top:30px;
+    margin-bottom:13px;
+}
+.parking, .motel {
+    margin-bottom:13px;
+}
+.min-max-price {
+    margin-top:34px;
 }
 .search-actions-buttons {
     display:flex;
     flex-direction:column;
-    padding-left:81px;
-}
-.cost-field {
-    padding:0;
 }
 .button-apply {
     margin-bottom:20px;
+}
+.results {
+    display:flex;
+    margin: 44px 72px;
+}
+.sorting {
+    font-family: "PT Sans",sans-serif;
+    margin-right:81px;
+}
+.results-view-list {
+    display:flex;
+}
+.results-view-item {
+    margin-right:8px;
 }
 .count-results {
     color:var(--black);
@@ -362,18 +385,45 @@ fieldset {
     line-height:auto;
     font-weight:700;
     text-transform:uppercase;
+    margin-right:192px;
 }
-.sorting {
-    font-family: "PT Sans",sans-serif;
+.hotels-item {
+    display:flex;
+    margin:31px 72px;
+}
+.hotels-item-info {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.hotels-item-info-column {
+    display:flex;
+    flex-direction:column;
+}
+.hotel-type-cost {
+    display:flex;
 }
 .hotel-name {
     font-size:24px;
     font-weight:700;
     line-height:auto;
 }
+.hotel-image {
+    margin-right:36px;
+}
 .hotel-type,.hotel-cost {
     font-size:18px;
     line-height:auto;
+    margin-right:78px;
+}
+.favourite-button {
+    margin-left:8px;
+}
+.rating {
+    margin-left:361px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
 }
 .rating-score {
     color:var(--dark);
