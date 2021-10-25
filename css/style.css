@@ -285,26 +285,40 @@ ul,ol {
     font-family: "PT Sans", sans-serif;
 }
 .filters {
-    padding: 10px;
     background: var(--coolDark) url(../img/bg_catalog_1.jpg) no-repeat;
+    background-size: 1200px 408px;
     color: var(--white);
 }
 .filters-header-title {
     font-size: 60px;
-    line-height: auto;
     font-weight: 700;
+    padding:0;
+    margin:0;
+    padding-left:71px;
+    padding-top:55px;
+    padding-right:601px;
+}
+.infrastructure-field, .housing-type-field, .cost-field {
+    padding:0;
+    margin:0;
 }
 .search-fieldsets {
     display:flex;
+    padding:0;
 }
 .infrastructure-field {
     width:170px;
+    margin-left:71px;
 }
 .housing-type-field {
     width:170px;
 }
 .breadcrumbs {
     display:flex;
+    margin:0;
+    padding:0;
+    padding-left:71px;
+    padding-top:20px;
 }
 .breadcrumbs-item .visually-hidden {
     color: var(--white);
@@ -316,6 +330,12 @@ ul,ol {
     font-size:16px;
     line-height:auto;   
 }
+fieldset {
+}
+.search-fieldsets {
+    padding-bottom:40px;
+    padding-top:45px;
+}
 .search-fieldset-title {
     font-size:20px;
     font-weight:700;
@@ -324,6 +344,17 @@ ul,ol {
 .infrastructure,.housing-type {
     font-size:18px;
     line-height:auto;
+}
+.search-actions-buttons {
+    display:flex;
+    flex-direction:column;
+    padding-left:81px;
+}
+.cost-field {
+    padding:0;
+}
+.button-apply {
+    margin-bottom:20px;
 }
 .count-results {
     color:var(--black);
