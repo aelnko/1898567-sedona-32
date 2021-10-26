@@ -82,7 +82,7 @@ body {
     min-height:18px;
     padding:0 15px;
 }
-p,div,h,h1,h2 {
+p,h1,h2 {
     padding:0;
     margin:0;
 }
@@ -101,6 +101,7 @@ ul,ol {
     text-transform: uppercase;
     font-size:16px;
     line-height:auto;
+    cursor:pointer;
 }
 .navigation a{
     color:var(--black);
@@ -352,6 +353,9 @@ label {
 .swimmingpool, .hotel {
     margin-top:30px;
     margin-bottom:13px;
+}
+.radio-hotel-type, .checkbox {
+    cursor: pointer;
 }
 .parking, .motel {
     margin-bottom:13px;
