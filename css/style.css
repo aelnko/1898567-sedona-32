@@ -279,11 +279,12 @@ ul,ol {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 36px;
-    margin:0;
+    margin-bottom:15px;
 }
 .mailing-description {
     font-size:22px;
     line-height:26px;
+    margin-bottom:26px;
 }
 .email {
     font-family: "PT Sans", sans-serif;
@@ -433,6 +434,24 @@ label {
 }
 .number-products {
     font-family: "PT Sans", sans-serif;
+}
+.load-more {
+    display:flex;
+    justify-content:center;
+    margin:31px 288px;
+}
+.load-more-button {
+    width:625px;
+}
+
+.pagination {
+    display:flex;
+    margin:31px 72px;
+    justify-content:space-between;
+}
+.all-pages {
+    display:flex;
+    margin-right:301px;
 }
 .page-footer {
     display:flex;
