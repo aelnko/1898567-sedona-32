@@ -73,30 +73,30 @@
               <div class="infrastructure-block">
                 <p class="infrastructure-title">Инфраструктура:</p>
                 <p class="swimmingpool">
-                  <input type="checkbox" name="swimmingpool" checked id="swimmingpool">
+                  <input type="checkbox" name="swimmingpool" checked id="swimmingpool" class="checkbox">
                   <label for="swimmingpool" class="swimmingpool">Бассейн</label>
                 </p>
                 <p class="parking">
-                  <input type="checkbox" name="parking" checked id="parking">
+                  <input type="checkbox" name="parking" checked id="parking" class="checkbox">
                   <label for="parking" class="parking">Парковка</label>
                 </p>
                 <p class="wifi">
-                  <input type="checkbox" name="wifi" id="wifi">
+                  <input type="checkbox" name="wifi" id="wifi" class="checkbox">
                   <label for="wifi" class="wifi">Wi-Fi</label>
                 </p>
               </div>
               <div class="housing-type-block">
                 <p class="housing-type-title">Тип жилья:</p>
                 <p class="hotel">
-                  <input type="radio" name="hotel" id="hotel" value="hotel">
+                  <input type="radio" name="hotel-type" id="hotel" value="hotel" class="radio-hotel-type">
                   <label for="hotel" class="hotel"> Гостиница </label>
                 </p>
                 <p class="motel">
-                  <input type="radio" name="motel" id="motel" value="motel">
+                  <input type="radio" name="hotel-type" id="motel" value="motel" class="radio-hotel-type">
                   <label for="motel" class="motel"> Мотель </label>
                 </p>
                 <p class="apartment">
-                  <input type="radio" name="apartment" id="apartment" value="apartment">
+                  <input type="radio" name="hotel-type" id="apartment" value="apartment" class="radio-hotel-type">
                   <label for="apartment" class="apartment"> Апартаменты </label>
                 </p>
               </div>
@@ -123,7 +123,9 @@
           <div class="sorting">
             <form class="sorting" method="post" action="https://echo.htmlacademy.ru/">
               <select name="sorting" class="sorting">
-                <option>Сначала дешёвые</option>
+                <option value ="cheap" class="cheap">Сначала дешёвые</option>
+                <option value="popular" class="popular">Сначала популярные</option>
+                <option value="expensive" class="expensive">Сначала дорогие</option>
               </select>
             </form>
           </div>
@@ -276,32 +278,32 @@
           <div class="pagination">
             <ul class="all-pages">
               <li class="page">
-                <button type="button" class="current-page">
+                <button type="button" class="button current-page">
                   <a href="#" class="button page-link"> 1 </a>
                 </button>
               </li>
               <li class="page">
-                <button type="button" class="page">
+                <button type="button" class="button page">
                   <a href="#" class="button page-link"> 2 </a>
                 </button>
               </li>
               <li class="page">
-                <button type="button" class="page">
+                <button type="button" class="button page">
                   <a href="#" class="button page-link"> 3 </a>
                 </button>
               </li>
               <li class="page">
-                <button type="button" class="page">
+                <button type="button" class="button page">
                   <a href="#" class="button page-link"> 4 </a>
                 </button>
               </li>
               <li class="page">
-                <button type="button" class="page">
+                <button type="button" class="button page">
                   <a href="#" class="button page-link"> ... </a>
                 </button>
               </li>
               <li class="page">
-                <button type="button" class="page">
+                <button type="button" class="button page">
                   <a href="#" class="button page-link"> 10 </a>
                 </button>
               </li>
