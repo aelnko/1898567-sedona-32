@@ -97,11 +97,22 @@ ul,ol {
 }
 .button {
     font-family: "PT Sans", sans-serif;
+    border:none;
     font-weight: 700;
     text-transform: uppercase;
     font-size:16px;
     line-height:auto;
     cursor:pointer;
+    background-color:var(--warmLight);
+    color:var(--white);
+}
+.button-wish {
+    padding:10px 34px;
+    margin: 14px 10px;
+    border-radius:4px;
+}
+.search-button,.favourites-button {
+    background-color:var(--white);
 }
 .navigation a{
     color:var(--black);
@@ -268,6 +279,9 @@ ul,ol {
     justify-content:center;
     align-items:center;
 }
+form {
+    margin:0;
+}
 .mailing-catalog {
     padding:94px;
     display:flex;
@@ -287,8 +301,20 @@ ul,ol {
     line-height:26px;
     margin-bottom:26px;
 }
+.mailing-button {
+    background-color:var(--coolDark);
+    padding:16px;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+    margin:0;
+}
 .email {
     font-family: "PT Sans", sans-serif;
+    padding:16px;
+    width:600px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border:none;
 }
 .filters {
     background: var(--coolDark) url(../img/bg_catalog_1.jpg) no-repeat;
