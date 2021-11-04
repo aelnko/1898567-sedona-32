@@ -269,6 +269,10 @@ ul,ol {
     text-align:center;
     margin-top:73px;
 }
+.search-button-wrap {
+    padding:17px 150px;
+    border-radius:10px;
+}
 .mailing {
     background-image: url(../img/mailing.jpg);
     background-repeat: no-repeat;
@@ -281,6 +285,7 @@ ul,ol {
 }
 form {
     margin:0;
+    display:flex;
 }
 .mailing-catalog {
     padding:94px;
