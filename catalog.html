@@ -130,26 +130,31 @@
         </section>
         <section class="results">
           <p class="count-results">Найдено гостиниц: 38</p>
-            <form method="post" action="https://echo.htmlacademy.ru/">
+          <div class="sorting-wrap">
+            <form class="sorting-form" method="post" action="https://echo.htmlacademy.ru/">
               <select name="sorting" class="sorting">
                 <option value ="cheap" class="cheap">Сначала дешёвые</option>
                 <option value="popular" class="popular">Сначала популярные</option>
                 <option value="expensive" class="expensive">Сначала дорогие</option>
               </select>
             </form>
+          </div>
           <ul class="results-view-list">
             <li class="results-view-item">
-              <button type="button" class="button button-tile">
+              <button type="button" class="button view-button button-tile">
+                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
                 <span class="visually-hidden">Сетка</span>
               </button>
             </li>
             <li class="results-view-item">
-              <button type="button" class="button button-slideshow">
+              <button type="button" class="button view-button button-slideshow">
+                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
                 <span class="visually-hidden">Слайд-шоу</span>
               </button>
             </li>
             <li class="results-view-item">
-              <button type="button" class="button button-list">
+              <button type="button" class="button view-button button-list">
+                <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
                 <span class="visually-hidden">Список</span>
               </button>
             </li>
@@ -166,7 +171,7 @@
                     <div class="hotels-item-info-column">
                       <div class="hotel-type-cost">
                         <span class="hotel-type">Гостиница</span>
-                        <span class="hotel-cost">От 4000 ₽</span>
+                        <span class="hotel-cost hotel-cost-type">От 4000 ₽</span>
                       </div>
                     </div>
                   </div>
@@ -182,6 +187,10 @@
               </div>
               <div class="rating">
                 <div class="rating-stars">
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
                   <span class="visually-hidden rating-stars">4 звезды</span>
                 </div>
                 <span class="rating-score"> Рейтинг: 8,5 </span>
@@ -196,7 +205,7 @@
                     <div class="hotels-item-info-column">
                       <div class="hotel-type-cost">
                         <span class="hotel-type">Мотель</span>
-                        <span class="hotel-cost">От 3000 ₽</span>
+                        <span class="hotel-cost motel-cost-type">От 3000 ₽</span>
                       </div>
                     </div>
                   </div>
@@ -212,6 +221,9 @@
               </div>
               <div class="rating">
                 <div class="rating-stars">
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
                   <span class="visually-hidden rating-stars">3 звезды</span>
                 </div>
                 <span class="rating-score"> Рейтинг: 8,9 </span>
@@ -226,7 +238,7 @@
                     <div class="hotels-item-info-column">
                       <div class="hotel-type-cost">
                         <span class="hotel-type">Апартаменты</span>
-                        <span class="hotel-cost">От 2000 ₽</span>
+                        <span class="hotel-cost apartment-cost-type">От 2000 ₽</span>
                       </div>
                     </div>
                   </div>
@@ -242,6 +254,8 @@
               </div>
               <div class="rating">
                 <div class="rating-stars">
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
                   <span class="visually-hidden rating-stars">2 звезды</span>
                 </div>
                 <span class="rating-score"> Рейтинг: 9,2 </span>
@@ -256,7 +270,7 @@
                     <div class="hotels-item-info-column">
                       <div class="hotel-type-cost">
                         <span class="hotel-type">Гостиница</span>
-                        <span class="hotel-cost">От 3000 ₽</span>
+                        <span class="hotel-cost hotel-cost-type">От 3000 ₽</span>
                       </div>
                     </div>
                   </div>
@@ -272,6 +286,8 @@
               </div>
               <div class="rating">
                 <div class="rating-stars">
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
+                  <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
                   <span class="visually-hidden rating-stars">2 звезды</span>
                 </div>
                 <span class="rating-score"> Рейтинг: 9,2 </span>
@@ -317,12 +333,12 @@
               </li>
             </ul>
             <div class="number-products">
-              <form action="https://echo.htmlacademy.ru/" mothod="post">
-                <label class="number-products"> Гостиниц на странице: </label>
-                <select class="number-products">
+                <p class="number-of-products"> Гостиниц на странице: </p>
+                <select class="number-products-select">
                   <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
                 </select>
-              </form>
             </div>
           </div>
         </section>
@@ -359,7 +375,7 @@
           </li>
           <li class="social-contacts-item">
             <a class="social-link youtube-link" href="#">
-              <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h20v16H0z"/></clipPath></defs></svg>
+              <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#yt)"><path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z" fill="#83B3D3"/></g><defs><clipPath id="yt"><path fill="#fff" d="M0 0h20v16H0z"/></clipPath></defs></svg>
               <span class="visually-hidden">
                 Мы в ютюбе
               </span>
