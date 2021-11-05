@@ -89,9 +89,15 @@ p,h1,h2 {
 a {
     text-decoration:none;
     color: black
+    padding:0;
+    margin:0;
 }
 ul,ol {
     list-style-type: none;
+    padding:0;
+    margin:0;
+}
+li {
     padding:0;
     margin:0;
 }
@@ -103,13 +109,13 @@ ul,ol {
     font-size:16px;
     line-height:auto;
     cursor:pointer;
-    background-color:var(--warmLight);
     color:var(--white);
 }
 .button-wish {
-    padding:10px 34px;
+    padding:9px 34px;
     margin: 14px 10px;
     border-radius:4px;
+    background-color:var(--warmLight);
 }
 .search-button,.favourites-button {
     background-color:var(--white);
@@ -272,6 +278,7 @@ ul,ol {
 .search-button-wrap {
     padding:17px 150px;
     border-radius:10px;
+    background-color:var(--warmLight);
 }
 .mailing {
     background-image: url(../img/mailing.jpg);
@@ -320,6 +327,7 @@ form {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     border:none;
+    background-color:var(--light);
 }
 .filters {
     background: var(--coolDark) url(../img/bg_catalog_1.jpg) no-repeat;
@@ -397,9 +405,19 @@ label {
 .search-actions-buttons {
     display:flex;
     flex-direction:column;
+    position:absolute;
+    top:304px;
 }
 .button-apply {
     margin-bottom:20px;
+    padding:14px 35px;
+    border-radius:4px;
+    background-color:var(--coolLight);
+}
+.button-reset {
+    background-color: transparent;
+    text-transform:none;
+    font-weight:400;
 }
 .results {
     display:flex;
@@ -452,8 +470,22 @@ label {
     line-height:auto;
     margin-right:78px;
 }
-.favourite-button {
+.favourites-button-catalog {
     margin-left:8px;
+    padding:9px 30px;
+    border-radius:4px;
+    background-color:var(--coolLight);
+}
+.in-favourites-button {
+    margin-left:8px;
+    padding:9px 30px;
+    border-radius:4px;
+    background-color:var(--neutralLight);
+}
+.details-button {
+    padding:9px 32px;
+    border-radius:4px;
+    background-color:var(--warmLight);
 }
 .rating {
     margin-left:361px;
@@ -477,12 +509,39 @@ label {
 }
 .load-more-button {
     width:625px;
+    padding:15px 240px;
+    background-color:var(--coolLight);
+    border-radius:4px;
 }
-
 .pagination {
     display:flex;
     margin:31px 72px;
     justify-content:space-between;
+}
+.current-page-link {
+    color:var(--black);
+}
+.page-link {
+    color:var(--white);
+}
+.button-link {
+    border-radius:4px;
+    padding:0;
+    padding:15px 22px;
+    margin:0;
+    background-color:var(--coolLight);
+    border:none;
+    margin-right:8px;
+}
+.current-page {
+    padding:15px 22px;
+    border-radius:4px;
+    background-color:var(--light);
+    color:var(--black);
+    margin-right:8px;
+}
+li.current-page, li.page {
+    margin:0;
 }
 .all-pages {
     display:flex;
@@ -506,4 +565,5 @@ label {
 .footer-contacts-phone {
     font-size:40px;
     line-height:40px;
+    color:var(--black);
 }
