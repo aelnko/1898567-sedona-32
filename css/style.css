@@ -101,6 +101,10 @@ li {
     padding:0;
     margin:0;
 }
+.triangles {
+    position:absolute;
+    top:498px;
+}
 .button {
     font-family: "PT Sans", sans-serif;
     border:none;
