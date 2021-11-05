@@ -631,7 +631,16 @@ label {
     display:flex;
 }
 .number-of-products {
-    margin-left:301px;
+    width:175px;
+    align-self:center;
+    font-size:18px;
+}
+.number-products-select {
+    width:160px;
+    border:2px solid var(--gray);
+    border-radius:4px;
+    margin-left:51px;
+    padding-left:17px;
 }
 .load-more {
     display:flex;
@@ -647,7 +656,9 @@ label {
 .pagination {
     display:flex;
     margin:31px;
+    margin-left:72px;
     justify-content:space-between;
+    width:369px;
 }
 .current-page-link {
     color:var(--black);
