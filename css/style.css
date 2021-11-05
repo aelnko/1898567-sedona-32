@@ -120,6 +120,8 @@ li {
     line-height:auto;
     cursor:pointer;
     color:var(--white);
+    background-color:transparent;
+    border:none;
 }
 .button-wish {
     padding:9px 34px;
@@ -490,18 +492,38 @@ label {
     display:flex;
     margin: 44px 72px;
 }
+.sorting-form {
+    padding:0;
+    margin-left:100px;
+    width:287px;
+}
 .sorting {
     font-family: "PT Sans",sans-serif;
-    margin-right:81px;
-    width:287px;
     padding-left:19px;
     padding-top:13px;
     padding-bottom:13px;
     border:1px solid var(--gray);
     align-self:center;
+    width:287px;
+    border-radius:4px;
+    cursor:pointer;
+}
+.cheap,.popular,.expensive {
+    cursor:pointer;
 }
 .results-view-list {
     display:flex;
+    margin-left:81px;
+}
+.view-button {
+    border:2px solid var(--gray);
+    border-radius:4px;
+    padding:16px 16px;
+    box-shadow:0 4px 4px 0 rgba(0,0,0,0.25);
+    margin-left:8px;
+}
+.button-list {
+    border:2px solid var(--black);
 }
 .results-view-item {
     margin-right:8px;
@@ -512,17 +534,25 @@ label {
     line-height:auto;
     font-weight:700;
     text-transform:uppercase;
-    margin-right:192px;
     align-self:center;
+    width:350px;
+    padding:0;
 }
 .hotels-item {
     display:flex;
     margin:31px 72px;
+    border-top:1px solid var(--gray);
+    padding-top:28px;
+}
+.hotels-item:nth-of-type(4) {
+    border-bottom:1px solid var(--gray);
+    padding-bottom:30px;
 }
 .hotels-item-info {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+    width:325px;
 }
 .hotels-item-info-column {
     display:flex;
@@ -535,6 +565,7 @@ label {
     font-size:24px;
     font-weight:700;
     line-height:auto;
+    width:322px;
 }
 .hotel-image {
     margin-right:36px;
@@ -542,7 +573,18 @@ label {
 .hotel-type,.hotel-cost {
     font-size:18px;
     line-height:auto;
-    margin-right:78px;
+}
+.hotel-cost-type {
+    position:relative;
+    left:84px;
+}
+.motel-cost-type {
+    position:relative;
+    left:106px;
+}
+.apartment-cost-type {
+    position:relative;
+    left:58px;
 }
 .favourites-button-catalog {
     margin-left:8px;
@@ -552,7 +594,7 @@ label {
 }
 .in-favourites-button {
     margin-left:8px;
-    padding:9px 30px;
+    padding:9px 28px;
     border-radius:4px;
     background-color:var(--neutralLight);
 }
@@ -565,16 +607,31 @@ label {
     margin-left:361px;
     display:flex;
     flex-direction:column;
-    justify-content:flex-end;
+}
+.rating-stars {
+    align-self:center;
 }
 .rating-score {
     color:var(--dark);
     font-size:16px;
     line-height:auto;
     text-transform:uppercase;
+    background-color:var(--light);
+    width:95px;
+    padding:7px 32px;
+    border-radius:4px;
+    position:relative;
+    top:63px;
+}
+.number-products-form {
+    width:160px;
 }
 .number-products {
     font-family: "PT Sans", sans-serif;
+    display:flex;
+}
+.number-of-products {
+    margin-left:301px;
 }
 .load-more {
     display:flex;
@@ -589,7 +646,7 @@ label {
 }
 .pagination {
     display:flex;
-    margin:31px 72px;
+    margin:31px;
     justify-content:space-between;
 }
 .current-page-link {
