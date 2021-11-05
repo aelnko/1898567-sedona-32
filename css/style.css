@@ -41,6 +41,9 @@ body {
 .container {
     box-shadow:0 4px 4px 0 rgba(0,0,0,0.25);
 }
+.page-header {
+    box-shadow:0 4px 4px 0 rgda(0,0,0,0.25);
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -123,9 +126,31 @@ li {
     margin: 14px 10px;
     border-radius:4px;
     background-color:var(--warmLight);
+    position:absolute;
+    left:1008px;
 }
 .search-button,.favourites-button {
     background-color:transparent;
+}
+.search-button {
+    padding:10px;
+    position:absolute;
+    top:6px;
+    cursor:pointer;
+    margin:0;
+    left:918px;
+}
+.search-button-link,.favourites-button-link {
+    display:block;
+    padding:10px;
+}
+.favourites-button {
+    padding:10px;
+    position:absolute;
+    top:-4px;
+    cursor:pointer;
+    margin:0;
+    left:957px;
 }
 .navigation a{
     color:var(--black);
@@ -326,7 +351,7 @@ li {
     justify-content:center;
     align-items:center;
 }
-form {
+.mailing-form {
     margin:0;
     display:flex;
 }
@@ -385,6 +410,12 @@ form {
     padding:0;
     padding-left:71px;
     padding-top:20px;
+}
+.main-page-link {
+    margin-right:10px;
+}
+.arrow {
+    margin-right:10px;
 }
 .breadcrumbs-item .visually-hidden {
     color: var(--white);
@@ -462,6 +493,12 @@ label {
 .sorting {
     font-family: "PT Sans",sans-serif;
     margin-right:81px;
+    width:287px;
+    padding-left:19px;
+    padding-top:13px;
+    padding-bottom:13px;
+    border:1px solid var(--gray);
+    align-self:center;
 }
 .results-view-list {
     display:flex;
@@ -476,6 +513,7 @@ label {
     font-weight:700;
     text-transform:uppercase;
     margin-right:192px;
+    align-self:center;
 }
 .hotels-item {
     display:flex;
@@ -590,6 +628,12 @@ li.current-page, li.page {
 }
 .social-contacts {
     width:130px;
+}
+.social-contacts-item {
+    padding:14.5px;
+}
+.social-contacts-list {
+    display:flex;
 }
 .contacts-phone {
     width:720px;
