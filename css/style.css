@@ -125,7 +125,7 @@ li {
     background-color:var(--warmLight);
 }
 .search-button,.favourites-button {
-    background-color:var(--white);
+    background-color:transparent;
 }
 .navigation a{
     color:var(--black);
@@ -234,6 +234,21 @@ li {
     text-align:center;
     margin:0;
     padding:0;
+}
+.subreason-1 {
+    position:relative;
+    left:162.65px;
+    margin-bottom:23px;
+}
+.subreason-2 {
+    position:relative;
+    left:163.095px;
+    margin-bottom:23px;
+}
+.subreason-3 {
+    position:relative;
+    left:168px;
+    margin-bottom:23px;
 }
 .subreasons-item-first-third {
     background-color: var(--coolDark_12);
