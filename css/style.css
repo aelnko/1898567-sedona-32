@@ -383,6 +383,8 @@ li {
     font-size:22px;
     line-height:26px;
     margin-bottom:26px;
+    width:467px;
+    text-align:center;
 }
 .mailing-button {
     background-color:var(--coolDark);
@@ -580,9 +582,9 @@ input[placeholder="до"] {
 }
 .hotels-item {
     display:flex;
-    margin:31px 72px;
     border-top:1px solid var(--gray);
-    padding-top:28px;
+    padding:28px 0;
+    margin:0 72px;
 }
 .hotels-item:nth-of-type(4) {
     border-bottom:1px solid var(--gray);
@@ -667,6 +669,7 @@ input[placeholder="до"] {
 .number-products {
     font-family: "PT Sans", sans-serif;
     display:flex;
+    margin-left:301px
 }
 .number-of-products {
     width:175px;
@@ -684,19 +687,26 @@ input[placeholder="до"] {
     display:flex;
     justify-content:center;
     margin:auto;
+    width:1056px;
+    border-bottom:1px solid var(--gray);
 }
 .load-more-button {
     width:625px;
     padding:15px 240px;
     background-color:var(--coolLight);
     border-radius:4px;
+    margin:31px 215.5px;
 }
 .pagination {
     display:flex;
-    margin:31px;
-    margin-left:72px;
     justify-content:space-between;
     width:369px;
+}
+.pages-hotels {
+    display:flex;
+    justify-content:space-between;
+    width:1056px;
+    margin:31px 72px;
 }
 .current-page-link {
     color:var(--black);
