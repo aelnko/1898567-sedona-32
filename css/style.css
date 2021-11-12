@@ -666,6 +666,7 @@ li {
 }
 .check-label {
     margin-left:39px;
+    cursor:pointer;
 }
 .check::before {
     content:"";
@@ -679,12 +680,40 @@ li {
     cursor:pointer;
     background-color:var(--white);
 }
-.check-input:hover + .check::before {
+.check-input:hover +.check::before {
+    background-color:rgba(255,255,255,0.6);
+}
+.check-input:focus + .check::before {
+    border:3px solid rgba(131, 179, 211,0.6);
+    background-color:rgba(255,255,255,0.6);
+    outline:none;
+    border-radius:4px;
+}
+.check-input:active +.check::before {
+    background-color:rgba(255,255,255,0.3);
 }
 .check-input:checked + .check::before {
     background-image:url(../img/tick.svg);
     background-repeat:no-repeat;
     background-position:4px 6px;
+}
+.check-input:checked:hover + .check::before {
+    background-image:url(../img/tick.svg);
+    background-repeat:no-repeat;
+    background-position:4px 6px;
+    background-color:rgba(255,255,255,0.6);
+}
+.check-input:checked:focus +.check::before { 
+    border:3px solid rgba(131, 179, 211,0.6);
+    background-color:rgba(255,255,255,0.6);
+    outline:none;
+    border-radius:4px;
+}
+.check-input:checked:active +.check::before { 
+    background-image:url(../img/tick.svg);
+    background-repeat:no-repeat;
+    background-position:4px 6px;
+    background-color:rgba(255,255,255,0.3);
 }
 .infrastructure-title, .housing-type-title, .cost-title {
     font-size:20px;
@@ -1122,4 +1151,7 @@ li.current-page, li.page {
     position:absolute;
     top:54px;
     left:592px;
+}
+.buttons {
+    display:flex;
 }
