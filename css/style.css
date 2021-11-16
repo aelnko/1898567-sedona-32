@@ -142,12 +142,10 @@ body {
     background-color:var(--warmDark);
 }
 .button-wish:focus {
-    border:none;
     outline:none;
     background-color:var(--warmDark);
     outline:3px solid var(--coolLight);
     border-radius:6px;
-    padding:6px 31px;
 }
 .button-wish:active {
     background-color:var(--warmDark);
@@ -265,6 +263,10 @@ body {
     background-color:transparent;
     cursor:pointer;
 }
+.favourites-list {
+    padding:0;
+    margin:0;
+}
 .favourites-item {
     display:flex;
     margin-bottom:25px;
@@ -276,26 +278,67 @@ body {
     margin-left:17px;
     width:159px;
 }
+.favourites-item-img-info {
+    display:flex;
+    cursor:pointer;
+}
+.favourites-item-img-info:hover .hotel-cart-img {
+    opacity:60%;
+}
+.favourites-item-img-info:hover .favourites-item-title {
+    opacity:60%;
+}
+.favourites-item-img-info:hover .favourites-item-type {
+    opacity:50%;
+}
+.favourites-item-img-info:focus {
+    outline:3px solid var(--coolLight);
+    padding:10px;
+    border-radius:10px;
+    margin:0;
+}
+.favourites-item-img-info:active .hotel-cart-img {
+    opacity:40%;
+}
+.favourites-item-img-info:active .favourites-item-title {
+    opacity:40%;
+}
+.favourites-item-img-info:active .favourites-item-type {
+    opacity:30%;
+}
 .favourites-item-title {
     font-size:18px;
     font-weight:700;
     padding:0;
     width:159px;
     text-align:left;
+    margin:0;
 }
 .favourites-item-type {
     font-size:16px;
     font-weight:400;
     padding:0;
+    margin:0;
 }
 .delete-icon {
-    margin-left:110px;
-    margin-top:7px;
     opacity:20%;
+    display:flex;
+    align-items:center;
+    margin-bottom:16px;
+    max-height:16px;
 }
 .delete-button {
     display:flex;
     flex-direction:column;
+    cursor:pointer;
+    padding:10px;
+    margin-left:98px;
+}
+.delete-button:hover .delete-icon{
+    opacity:100%;
+}
+.delete-button:focus {
+    outline:3px solid var(--coolLight);
 }
 .all-favourites-button {
     width:400px;
@@ -304,6 +347,16 @@ body {
     border:none;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
+}
+.all-favourites-button:hover {
+    background-color:var(--warmDark);
+}
+.all-favourites-button:focus {
+    background-color:var(--warmDark);
+    outline:3px solid var(--coolLight);
+}
+.all-favourites-button:active .all-favourites-title {
+    opacity:30%;
 }
 .all-favourites-title {
     color:var(--white);
@@ -472,6 +525,7 @@ body {
     padding:91px 240px;
 }
 .hotel-search-question {
+    margin:0;
     font-size: 30px;
     text-transform: uppercase;
     line-height: 36px;
@@ -481,6 +535,7 @@ body {
     height:50px;
 }
 .hotel-search-suggestions {
+    margin:0;
     font-size:22px;
     line-height:26px;
     text-align:center;
@@ -529,6 +584,7 @@ body {
     align-items:center;
 }
 .mailing-title {
+    margin:0;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -536,6 +592,7 @@ body {
     margin-bottom:15px;
 }
 .mailing-description {
+    margin:0;
     font-size:22px;
     line-height:26px;
     margin-bottom:26px;
@@ -553,9 +610,9 @@ body {
     background-color:var(--coolDark);
 }
 .mailing-button:focus {
-    background-color:var(--coolDark);
-    border:3px solid var(--warmDark);
     outline:none;
+    background-color:var(--coolDark);
+    outline:3px solid var(--warmDark);
 }
 .mailing-button:active {
     background-color:var(--coolDark);
@@ -574,8 +631,8 @@ body {
     background-color:var(--gray);
 }
 .email:focus {
-    border:3px solid var(--coolLight);
     outline:none;
+    border:3px solid var(--coolLight);
 }
 .email:active {
     background-color:var(--white);
@@ -786,6 +843,21 @@ input[placeholder="до"] {
     padding-top:13px;
     padding-bottom:13px;
 }
+.min:hover{
+    border:2px solid rgba(255,255,255,0.6);
+}
+.max:hover {
+    border:2px solid rgba(255,255,255,0.6);
+    border-left:none;
+}
+.min:focus, .max:focus {
+    outline:none;
+    box-shadow:0 0 0 3px var(--coolLight),
+            inset 0 0 0  3px var(--coolLight);
+}
+.min:active, .max:active {
+    background-color:var(--warmLight);
+}
 .max {
     border-top-right-radius:4px;
     border-bottom-right-radius:4px;
@@ -860,6 +932,18 @@ input[placeholder="до"] {
     font-weight:400;
     margin-bottom:7px;
     margin-top:23px;
+    width:91px;
+    align-self:center;
+}
+.button-reset:hover {
+    color:rgba(255,255,255,0.6);
+}
+.button-reset:focus {
+    outline:3px solid var(--coolLight);
+    border-radius:4px;
+}
+.button-reset:active {
+    color:rgba(255,255,255,0.3);
 }
 .results {
     display:flex;
