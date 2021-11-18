@@ -1277,9 +1277,9 @@ input[placeholder="до"] {
     background-color:var(--coolDark);
 }
 .button-link:focus {
-    border:3px solid var(--warmLight);
     outline:none;
-    padding:12px 19px;
+    outline:3px solid var(--warmLight);
+    box-sizing: border-box;
 }
 .button-link:active {
     background-color:var(--coolDark);
@@ -1294,10 +1294,6 @@ input[placeholder="до"] {
 }
 .current-page:hover {
     background-color:var(--gray);
-}
-.current-page:focus {
-    outline:none;
-    outline:1px solid var(--warmLight);
 }
 .current-page:active {
     color:var(--black);
