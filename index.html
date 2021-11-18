@@ -41,17 +41,10 @@
           </li>
           <li class="navigation-user-item">
             <button class="navigation-button button favourites-button" type="button">
-              <svg class="favourites-green-circle" width="19" height="19" viewBox="0 0 19 19" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M19 9.5C19 14.7467 14.7467 19 9.5 19C4.25329 19 0 14.7467 0 9.5C0 4.25329 4.25329 0 9.5 0C14.7467 0 19 4.25329 19 9.5Z"
-                  fill="#7DB54F" />
-              </svg>
               <span class="visually-hidden">
                 Избранное
               </span>
               <p class="number-of-favourites">
-                12
               </p>
             </button>
             <div class="popover popover-favourites">
@@ -64,8 +57,9 @@
                 </span>
                 <ul class="favourites-list">
                   <li class="favourites-item">
-                    <div class="favourites-item-img-info">
-                      <img src="../img/hotel-2-small.jpg" alt="Изображение первого отеля" class="hotel-cart-img" height="48px" width="48px">
+                    <a class="favourites-item-img-info">
+                      <img src="./img/hotel-2-small.jpg" alt="Изображение первого отеля" class="hotel-cart-img"
+                        height="48px" width="48px">
                       <div class="favourites-item-info">
                         <h2 class="favourites-item-title">
                           Desert Quail Inn
@@ -74,7 +68,7 @@
                           Мотель
                         </p>
                       </div>
-                    </div>
+                    </a>
                     <button class="delete-button button">
                       <svg class="delete-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +89,8 @@
                   </li>
                   <li class="favourites-item">
                     <div class="favourites-item-img-info">
-                      <img src="../img/hotel-3-small.jpg" alt="Изображение второго отеля" class="hotel-cart-img" height="48px" width="48px">
+                      <img src="./img/hotel-3-small.jpg" alt="Изображение второго отеля" class="hotel-cart-img"
+                        height="48px" width="48px">
                       <div class="favourites-item-info">
                         <h2 class="favourites-item-title">
                           Villas at Poco Diablo
@@ -155,7 +150,7 @@
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h1>
         <p class="intro-heading-text">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
       <section class="reasons">
@@ -168,7 +163,7 @@
               <span class="reasons-number">
                 — №1 —
               </span>
-              <p class="reasons-description-first-second">
+              <p class="reasons-description">
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
@@ -178,8 +173,8 @@
               <img src="img/photo-1.jpg" class="reasons-img" alt="Фотография главной улицы" width="800" height="384">
             </div>
           </li>
-          <li class="subreasons-item">
-            <div class="subreasons-item-first-third subreasons-item-wrap">
+          <li class="reasons-item">
+            <div class="reasons-item-wrap">
               <svg class="subreason-1" width="75" height="72" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M29.7 65h16V41.2h-16V65Zm2.9-20.9h10.1v18H32.6v-18Z" fill="#81B3D2" />
                 <path
@@ -189,16 +184,16 @@
                   d="M29.9 27.1c0 4.3 3.5 7.7 7.7 7.7 4.3 0 7.8-3.5 7.8-7.7 0-4.3-3.5-7.7-7.8-7.7a7.7 7.7 0 0 0-7.7 7.7Zm7.8-5a5 5 0 0 1 5 4.9c0 2.7-2.2 4.9-5 4.9a5 5 0 0 1-5-4.9c0-2.7 2.2-4.9 5-4.9ZM20.1 41.2h-3v3.9h3v-3.9ZM26 41.2h-3v3.9h3v-3.9ZM20.1 47.2h-3v3.9h3v-3.9ZM26 47.2h-3v3.9h3v-3.9ZM52 41.2h-3v3.9h3v-3.9ZM57.9 41.2h-3v3.9h3v-3.9ZM52 47.2h-3v3.9h3v-3.9ZM57.9 47.2h-3v3.9h3v-3.9Z"
                   fill="#81B3D2" />
               </svg>
-              <h3 class="subreasons-title">
+              <h3 class="reasons-title">
                 Жильё
               </h3>
-              <p class="subreasons-description">
+              <p class="reasons-description">
                 Рекомендуем пожить в настоящем мотеле, всё как в кино!
               </p>
             </div>
           </li>
-          <li class="subreasons-item">
-            <div class="subreasons-item-wrap">
+          <li class="reasons-item">
+            <div class="reasons-item-wrap">
               <svg class="subreason-2" width="74" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M69.9 46.7H4.1C1.8 46.7 0 48.6 0 51v3.5c0 2.4 1.9 4.3 4.1 4.3H5v1.1C5 65.4 9.3 70 14.6 70h44.6c5.3 0 9.6-4.5 9.6-10.1v-1.1h.9c2.3 0 4.1-1.9 4.1-4.3V51a4 4 0 0 0-3.9-4.3ZM66 59.9c0 3.9-3 7-6.7 7H14.6c-3.7 0-6.7-3.2-6.7-7v-1.1H66v1.1Zm5.1-5.4c0 .7-.6 1.3-1.2 1.3H4c-.7 0-1.2-.6-1.2-1.3V51c0-.7.6-1.3 1.2-1.3h65.8c.7 0 1.2.6 1.2 1.3.1 0 .1 3.5.1 3.5ZM15.6 38.4l5.4 4.1 5.3-4.1 5.3 4.1 5.3-4.1 5.4 4.1 5.3-4.1 5.3 4.1 5.4-4.1 5.3 4.1 6.2-4.7-1.7-2.5-4.5 3.4-5.3-4.1-5.4 4.1-5.3-4.1-5.3 4.1-5.4-4.1-5.3 4.1-5.3-4.1-5.3 4.1-5.4-4.1-5.3 4.1-4.5-3.4-1.7 2.5 6.2 4.7 5.3-4.1ZM8 31.5h60.8c0-.6.1-1.2.1-1.9v-1.2C68.2 12.7 54.2 0 37 0 19.7 0 5.7 12.7 5 28.5v1.2c0 .6 0 1.3.1 1.9H8v-.1ZM37 3c15.6 0 28.4 11.3 29 25.5H8C8.6 14.4 21.4 3 37 3Z"
@@ -207,16 +202,16 @@
                   d="M37 17.3c1.05 0 1.9-.9 1.9-2s-.85-2-1.9-2c-1.05 0-1.9.9-1.9 2s.85 2 1.9 2ZM29.2 12.2c1.05 0 1.9-.9 1.9-2s-.85-2-1.9-2c-1.05 0-1.9.9-1.9 2s.85 2 1.9 2ZM44.7 12.2c1.05 0 1.9-.9 1.9-2s-.85-2-1.9-2c-1.05 0-1.9.9-1.9 2s.85 2 1.9 2Z"
                   fill="#81B3D2" />
               </svg>
-              <h3 class="subreasons-title">
+              <h3 class="reasons-title">
                 Еда
               </h3>
-              <p class="subreasons-description">
+              <p class="reasons-description">
                 Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </div>
           </li>
-          <li class="subreasons-item">
-            <div class="subreasons-item-first-third subreasons-item-wrap">
+          <li class="reasons-item">
+            <div class="reasons-item-wrap">
               <svg class="subreason-3" width="64" height="76" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#b)">
                   <path
@@ -229,10 +224,10 @@
                   </clipPath>
                 </defs>
               </svg>
-              <h3 class="subreasons-title">
+              <h3 class="reasons-title">
                 Сувениры
               </h3>
-              <p class="subreasons-description">
+              <p class="reasons-description">
                 Не только китайского, но и настоящего местного производства!
               </p>
             </div>
@@ -250,13 +245,13 @@
               <span class="reasons-number">
                 — №2 —
               </span>
-              <p class="reasons-description-first-second">
+              <p class="reasons-description">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
             </div>
           </li>
           <li class="reasons-item">
-            <div class="reasons-item-third-fifth reasons-item-third-fifth-fourth-wrap">
+            <div class="reasons-item-wrap">
               <h3 class="reasons-title">
                 Небольшая площадь
               </h3>
@@ -269,7 +264,7 @@
             </div>
           </li>
           <li class="reasons-item">
-            <div class="reasons-item-fourth reasons-item-third-fifth-fourth-wrap">
+            <div class="reasons-item-wrap">
               <h3 class="reasons-title">
                 Красивая дорога
               </h3>
@@ -282,7 +277,7 @@
             </div>
           </li>
           <li class="reasons-item">
-            <div class="reasons-item-third-fifth reasons-item-third-fifth-fourth-wrap">
+            <div class="reasons-item-wrap">
               <h3 class="reasons-title">
                 Мало туристов
               </h3>
@@ -297,19 +292,15 @@
         </ul>
       </section>
       <section class="hotel-search">
-        <div class="hotel-search-text">
           <h2 class="hotel-search-question">
             Заинтересовались?
           </h2>
           <p class="hotel-search-suggestions">
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <div class="button-wrap">
-            <button class="button search-button-wrap" type="button">
-              Поиск гостиницы в Седоне
-            </button>
-          </div>
-        </div>
+        <button class="button search-button-wrap" type="button">
+          Поиск гостиницы в Седоне
+        </button>
       </section>
       <section class="mailing">
         <h3 class="mailing-title">
@@ -329,21 +320,21 @@
     <footer class="page-footer footer-container">
       <section class="social-contacts">
         <ul class="social-contacts-list">
-          <li class="social-contacts-item">
+          <li class="social-contacts-item" tabindex="1">
             <a class="social-link twitter-link" href="#">
               <span class="visually-hidden">
                 Мы в твиттере
               </span>
             </a>
           </li>
-          <li class="social-contacts-item">
+          <li class="social-contacts-item" tabindex="1">
             <a class="social-link facebook-link" href="#">
               <span class="visually-hidden">
                 Мы в фейсбуке
               </span>
             </a>
           </li>
-          <li class="social-contacts-item">
+          <li class="social-contacts-item" tabindex="1">
             <a class="social-link youtube-link" href="#">
               <span class="visually-hidden">
                 Мы в ютюбе
