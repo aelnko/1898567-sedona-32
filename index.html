@@ -355,7 +355,7 @@
         </a>
       </section>
     </footer>
-    <div class="modal-container">
+    <div class="modal-container modal-container-open">
       <div class="modal modal-search">
         <div class="modal-title-close">
           <h2 class="modal-title">
@@ -372,19 +372,39 @@
             <div class="date-form-wrap">
               <label class="date-in-label" for="date-in">Дата заезда:</label>
               <input type="date" class="date-in-input" name="date-in" id="date-in">
+              <div class="error">Мы не можем отправить вас в прошлое.</div>
+              <div class="success">На эти даты есть свободные номера. Пока есть.</div>
             </div>
             <div class="date-form-wrap">
-              <label class="date-out-label" for="date-in">Дата выезда:</label>
+              <label class="date-out-label" for="date-out">Дата выезда:</label>
               <input type="date" class="date-out-input" name="date-out" id="date-out">
+              <div class="error">Мы не можем отправить вас в прошлое.</div>
+              <div class="success">На эти даты есть свободные номера. Пока есть.</div>
             </div>
             <div class="number-of-guests">
               <div class="number-of-adults">
                 <label for="number-adults" class="number-label">Взрослые:</label>
-                <input type="number" class="number-input" name="number-adults" id="number-adults" value="2">
+                <div class="input-buttons">
+                  <button class="decrease-button button">
+                  </button>
+                  <input type="number" class="number-input" name="number-adults" id="number-adults" value="2">
+                  <button class="increase-button button">
+                  </button>
+                </div>
               </div>
               <div class="number-of-children">
                 <label for="number-children" class="number-label">Дети:</label>
-                <input type="number" class="number-input" name="number-children" id="number-children" value="1">
+                <div class="warning">i</div>
+                <div class="warning-info">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </div>
+                <div class="input-buttons">
+                  <button class="decrease-button button">
+                  </button>
+                  <input type="number" class="number-input" name="number-children" id="number-children" value="1">
+                  <button class="increase-button button">
+                  </button>
+                </div>
               </div>
             </div>
             <button class="button search-hotel-button">Найти</button>
