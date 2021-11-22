@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-active">
             <a class="navigation-link" href="index.html">
               Главная
             </a>
@@ -29,7 +29,7 @@
             </a>
           </li>
         </ul>
-        <a href="" class="sedona-logo">
+        <a class="sedona-logo" href="#">
           <img src="img/sedona.svg" alt="Логотип Седоны" width="138" height="70.05">
         </a>
         <ul class="navigation-list navigation-user">
@@ -49,7 +49,7 @@
               </p>
             </button>
             <div class="popover popover-favourites popover-open">
-              <button class="popover-close-button">
+              <button class="popover-close-button" type="button">
                 <span class="visually-hidden">Закрыть</span>
               </button>
               <div class="popover-content">
@@ -70,7 +70,7 @@
                         </p>
                       </div>
                     </a>
-                    <button class="delete-button button">
+                    <button class="delete-button button" type="button">
                       <svg class="delete-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -101,7 +101,7 @@
                         </p>
                       </div>
                     </a>
-                    <button class="delete-button button">
+                    <button class="delete-button button" type="button">
                       <svg class="delete-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -121,7 +121,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="all-favourites-button button">
+              <button class="all-favourites-button button" type="button">
                 <p class="all-favourites-title">
                   Все избранные
                 </p>
@@ -355,19 +355,19 @@
         </a>
       </section>
     </footer>
-    <div class="modal-container modal-container-open">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <div class="modal-title-close">
           <h2 class="modal-title">
             Поиск гостиницы в Седоне
           </h2>
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">
               Закрыть
             </span>
           </button>
         </div>
-        <section class="modal-content">
+        <div class="modal-content">
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="date-form-wrap">
               <label class="date-in-label" for="date-in">Дата заезда:</label>
@@ -385,10 +385,10 @@
               <div class="number-of-adults">
                 <label for="number-adults" class="number-label">Взрослые:</label>
                 <div class="input-buttons">
-                  <button class="decrease-button button">
+                  <button class="decrease-button button" type="button">
                   </button>
                   <input type="number" class="number-input" name="number-adults" id="number-adults" value="2">
-                  <button class="increase-button button">
+                  <button class="increase-button button" type="button">
                   </button>
                 </div>
               </div>
@@ -400,17 +400,17 @@
                   размещаются бесплатно.
                 </div>
                 <div class="input-buttons">
-                  <button class="decrease-button button">
+                  <button class="decrease-button button" type="button">
                   </button>
                   <input type="number" class="number-input" name="number-children" id="number-children" value="1">
-                  <button class="increase-button button">
+                  <button class="increase-button button" type="button">
                   </button>
                 </div>
               </div>
             </div>
-            <button class="button search-hotel-button">Найти</button>
+            <button class="button search-hotel-button" type="button">Найти</button>
           </form>
-        </section>
+        </div>
       </div>
     </div>
   </div>
