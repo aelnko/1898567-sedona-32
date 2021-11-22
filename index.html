@@ -48,7 +48,7 @@
               <p class="number-of-favourites">
               </p>
             </button>
-            <div class="popover popover-favourites">
+            <div class="popover popover-favourites popover-open">
               <button class="popover-close-button">
                 <span class="visually-hidden">Закрыть</span>
               </button>
@@ -58,7 +58,7 @@
                 </span>
                 <ul class="favourites-list">
                   <li class="favourites-item">
-                    <a class="favourites-item-img-info">
+                    <a class="favourites-item-img-info" href="#">
                       <img src="./img/hotel-2-small.jpg" alt="Изображение первого отеля" class="hotel-cart-img"
                         height="48px" width="48px">
                       <div class="favourites-item-info">
@@ -89,7 +89,7 @@
                     </button>
                   </li>
                   <li class="favourites-item">
-                    <div class="favourites-item-img-info">
+                    <a class="favourites-item-img-info" href="#">
                       <img src="./img/hotel-3-small.jpg" alt="Изображение второго отеля" class="hotel-cart-img"
                         height="48px" width="48px">
                       <div class="favourites-item-info">
@@ -100,7 +100,7 @@
                           Апартаменты
                         </p>
                       </div>
-                    </div>
+                    </a>
                     <button class="delete-button button">
                       <svg class="delete-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -371,13 +371,13 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="date-form-wrap">
               <label class="date-in-label" for="date-in">Дата заезда:</label>
-              <input type="date" class="date-in-input" name="date-in" id="date-in">
+              <input type="date" class="date-in-input date-in-input-invalid" name="date-in" id="date-in">
               <div class="error">Мы не можем отправить вас в прошлое.</div>
               <div class="success">На эти даты есть свободные номера. Пока есть.</div>
             </div>
             <div class="date-form-wrap">
               <label class="date-out-label" for="date-out">Дата выезда:</label>
-              <input type="date" class="date-out-input" name="date-out" id="date-out">
+              <input type="date" class="date-out-input date-out-input-valid" name="date-out" id="date-out">
               <div class="error">Мы не можем отправить вас в прошлое.</div>
               <div class="success">На эти даты есть свободные номера. Пока есть.</div>
             </div>
@@ -396,7 +396,8 @@
                 <label for="number-children" class="number-label">Дети:</label>
                 <div class="warning">i</div>
                 <div class="warning-info">
-                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
                 </div>
                 <div class="input-buttons">
                   <button class="decrease-button button">
