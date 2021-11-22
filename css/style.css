@@ -241,8 +241,8 @@ body {
     color:var(--black);
     position:absolute;
     z-index:10;
-    top:45px;
-    left:-150px;
+    top:48px;
+    left:-179px;
     background-color:var(--white);
     box-sizing: content-box;
     border-bottom-left-radius:20px;
@@ -251,12 +251,24 @@ body {
     border-top-right-radius:20px;
     display:none;
 }
+.popover-favourites::before {
+    content:"";
+    height:10px;
+    width:10px;
+    background-color:white;
+    border-top:1px solid #E4E4E4;
+    border-left:1px solid #E4E4E4;
+    position:absolute;
+    transform:rotate(45deg);
+    top:-5px;
+    left:193px;
+}
 .popover-content {   
-    padding:25px 25px 0 25px;
     border:1px solid var(--gray);
     outline-offset:-1px;
     border-radius:20px;
     border-bottom:none;
+    padding:13px;
 }
 .popover-close-button {
     width:37px;
@@ -273,7 +285,6 @@ body {
 }
 .favourites-item {
     display:flex;
-    margin-bottom:25px;
     justify-content:space-between;
 }
 .favourites-item-info {
@@ -286,6 +297,9 @@ body {
 .favourites-item-img-info {
     display:flex;
     cursor:pointer;
+    padding:10px;
+    text-decoration:none;
+    color:black;
 }
 .favourites-item-img-info:hover .hotel-cart-img {
     opacity:60%;
@@ -298,7 +312,6 @@ body {
 }
 .favourites-item-img-info:focus {
     outline:3px solid var(--coolLight);
-    padding:10px;
     border-radius:10px;
     margin:0;
 }
@@ -331,13 +344,16 @@ body {
 .delete-button {
     cursor:pointer;
     padding:10px;
-    justify-content:space-between;
+    align-self:flex-start;
+    margin-top:8px;
+    margin-right:2px;
 }
 .delete-button:hover .delete-icon{
     opacity:100%;
 }
 .delete-button:focus {
     outline:3px solid var(--coolLight);
+    border-radius:10px;
 }
 .all-favourites-button {
     width:400px;
@@ -1544,12 +1560,12 @@ li.current-page, li.page {
     top:51px;
     left:155px;
 }
-.date-in-input:invalid +.error,
-.date-out-input:invalid +.error {
+.date-in-input-invalid +.error,
+.date-out-input-invalid +.error {
     display:block;
 }
-.date-in-input:valid +.success,
-.date-out-input:valid +.success {
+.date-in-input-valid ~.success,
+.date-out-input-valid ~.success {
     display:block;
 }
 .date-in-label, 
