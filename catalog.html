@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 </head>
 
 <body>
@@ -23,13 +23,13 @@
               О Седоне
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-active">
             <a class="navigation-link" href="catalog.html">
               Гостиницы
             </a>
           </li>
         </ul>
-        <a href="" class="sedona-logo">
+        <a class="sedona-logo" href="#">
           <img src="img/sedona.svg" alt="Логотип Седоны" width="138" height="70.05">
         </a>
         <ul class="navigation-list navigation-user">
@@ -49,7 +49,7 @@
               </p>
             </button>
             <div class="popover popover-favourites popover-open">
-              <button class="popover-close-button">
+              <button class="popover-close-button" type="button">
                 <span class="visually-hidden">Закрыть</span>
               </button>
               <div class="popover-content">
@@ -70,7 +70,7 @@
                         </p>
                       </div>
                     </a>
-                    <button class="delete-button button">
+                    <button class="delete-button button" type="button">
                       <svg class="delete-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -101,7 +101,7 @@
                         </p>
                       </div>
                     </a>
-                    <button class="delete-button button">
+                    <button class="delete-button button" type="button">
                       <svg class="delete-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -121,7 +121,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="all-favourites-button button">
+              <button class="all-favourites-button button" type="button">
                 <p class="all-favourites-title">
                   Все избранные
                 </p>
@@ -158,7 +158,7 @@
                 </svg>
               </li>
               <li class="breadcrumbs-item current">
-                <a href="#" class="current-page-link"> Гостиницы </a>
+                <a class="current-page-link" href="#"> Гостиницы </a>
               </li>
             </ul>
           </div>
@@ -221,12 +221,12 @@
                   </div>
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="button price-toggle min-toggle">
+                      <button class="button price-toggle min-toggle" type="button">
                         <span class="visually-hidden">
                           Изменить минимальную цену
                         </span>
                       </button>
-                      <button class="button price-toggle max-toggle">
+                      <button class="button price-toggle max-toggle" type="button">
                         <span class="visually-hidden">
                           Изменить максимальную цену
                         </span>
@@ -255,7 +255,7 @@
           </div>
           <ul class="results-view-list">
             <li class="results-view-item">
-              <button type="button" class="button view-button button-tile">
+              <button class="button view-button button-tile" type="button">
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
                     fill="#000" />
@@ -264,7 +264,7 @@
               </button>
             </li>
             <li class="results-view-item">
-              <button type="button" class="button view-button button-slideshow">
+              <button class="button view-button button-slideshow" type="button">
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
                 </svg>
@@ -272,7 +272,7 @@
               </button>
             </li>
             <li class="results-view-item">
-              <button type="button" class="button view-button button-list">
+              <button class="button view-button button-list" type="button">
                 <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
@@ -301,10 +301,10 @@
                 </div>
                 <div class="hotels-item-info-column">
                   <div class="buttons">
-                    <button class="button details-button">
+                    <button class="button details-button" type="button">
                       Подробнее
                     </button>
-                    <button type="button" class="button favourites-button-catalog">В избранное</button>
+                    <button class="button favourites-button-catalog" type="button">В избранное</button>
                   </div>
                 </div>
               </div>
@@ -343,10 +343,10 @@
                 </div>
                 <div class="hotels-item-info-column">
                   <div class="buttons">
-                    <button class="button details-button">
+                    <button class="button details-button" type="button">
                       Подробнее
                     </button>
-                    <button type="button" class="button favourites-button-catalog">В избранное</button>
+                    <button class="button favourites-button-catalog" type="button">В избранное</button>
                   </div>
                 </div>
               </div>
@@ -382,10 +382,10 @@
                 </div>
                 <div class="hotels-item-info-column">
                   <div class="buttons">
-                    <button class="button details-button">
+                    <button class="button details-button" type="button">
                       Подробнее
                     </button>
-                    <button type="button" class="button in-favourites-button">В избранном</button>
+                    <button class="button in-favourites-button" type="button">В избранном</button>
                   </div>
                 </div>
               </div>
@@ -418,10 +418,10 @@
                 </div>
                 <div class="hotels-item-info-column">
                   <div class="buttons">
-                    <button class="button details-button">
+                    <button class="button details-button" type="button">
                       Подробнее
                     </button>
-                    <button type="button" class="button favourites-button-catalog">В избранное</button>
+                    <button class="button favourites-button-catalog" type="button">В избранное</button>
                   </div>
                 </div>
               </div>
@@ -442,38 +442,38 @@
         </section>
         <section class="others">
           <div class="load-more">
-            <button type="button" class="button load-more-button">Загрузить ещё</button>
+            <button class="button load-more-button" type="button">Загрузить ещё</button>
           </div>
           <div class="pages-hotels">
             <div class="pagination">
               <ul class="all-pages">
                 <li class="page-item">
-                  <button type="button" class="button current-page button-link">
+                  <button class="button current-page button-link" type="button">
                     1
                   </button>
                 </li>
                 <li class="page-item">
-                  <button type="button" class="button button-link">
+                  <button class="button button-link" type="button">
                     2
                   </button>
                 </li>
                 <li class="page-item">
-                  <button type="button" class="button button-link">
+                  <button class="button button-link" type="button">
                     3
                   </button>
                 </li>
                 <li class="page-item">
-                  <button type="button" class="button button-link">
+                  <button class="button button-link" type="button">
                     4
                   </button>
                 </li>
                 <li class="page-item">
-                  <button type="button" class="button button-link">
+                  <button class="button button-link" type="button">
                     ...
                   </button>
                 </li>
                 <li class="page-item">
-                  <button type="button" class="button button-link">
+                  <button class="button button-link" type="button">
                     10
                   </button>
                 </li>
@@ -525,7 +525,6 @@
               </span>
             </a>
           </li>
-
         </ul>
       </section>
       <section class="contacts-phone">
