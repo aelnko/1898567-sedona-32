@@ -531,7 +531,6 @@ body {
 .reasons-item:nth-of-type(9) .reasons-description,
 .reasons-item:nth-of-type(10) .reasons-description {
     width:250px;
-    margin-bottom:109px;
 }
 .reasons-item:nth-of-type(1) .reasons-item-wrap {
     padding-top:98px;
@@ -557,6 +556,18 @@ body {
 .reasons-item:nth-of-type(5) .reasons-item-wrap {
     padding-top:85px;
     padding-bottom:89px;
+}
+.reasons-item:nth-of-type(8) .reasons-item-wrap {
+    padding-top:98px;
+    padding-bottom:77px;
+}
+.reasons-item:nth-of-type(9) .reasons-item-wrap {
+    padding-top:98px;
+    padding-bottom:77px;
+}
+.reasons-item:nth-of-type(10) .reasons-item-wrap {
+    padding-top:98px;
+    padding-bottom:77px;
 }
 .subreason-1,
 .subreason-2, 
