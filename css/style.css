@@ -436,14 +436,18 @@ body {
     grid-column:span 2;
 }
 .reasons-item-picture {
-    height:384px;
+    height:100%;
+}
+.reasons-img {
+    height:100%;
+    object-fit:cover;
 }
 .reasons-item:nth-of-type(1) .reasons-item-wrap,
 .reasons-item:nth-of-type(7) .reasons-item-wrap {
     background-color: var(--coolDark);
     color: var(--white);
     width:400px;
-    min-height:384px;
+    min-height:100%;
 }
 .reasons-item:nth-of-type(3) .reasons-item-wrap,
 .reasons-item:nth-of-type(5) .reasons-item-wrap,
@@ -460,13 +464,14 @@ body {
 .reasons-item {
     margin:0;
     padding:0;
+    min-height:384px;
 }
 .reasons-item-wrap {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     width:400px;
-    min-height:384px;
+    min-height:100%;
     position:relative;
 }
 .reasons-title {
